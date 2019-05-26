@@ -45,13 +45,13 @@
 
                     @endif
                 </div>
-                <div class=" row">
-                    <label for="profile-image" class="col-md-4 col-form-label">Profile image</label>
-                    <input type="file" class="form-control-file" id="profile-image" name="profile-image">
-                    @if($errors->has('profile-image'))
+                <div class="row">
+                    <label for="image" class="col-md-4 col-form-label">Profile Image</label>
 
-                    <strong>{{$errors->first('profile-image')}}</strong>
+                    <input type="file" class="form-control-file" id="image" name="image">
 
+                    @if ($errors->has('image'))
+                    <strong>{{ $errors->first('image') }}</strong>
                     @endif
                 </div>
 
